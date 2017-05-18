@@ -6,7 +6,7 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.routing';
 import { SharedModule } from './shared/shared.module';
-import { ColorPickerModule} from 'angular2-color-picker';
+import { ColorPickerModule} from 'ngx-color-picker';
 
 @NgModule({
   declarations: [

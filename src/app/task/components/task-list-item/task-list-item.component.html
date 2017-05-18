@@ -1,6 +1,7 @@
 <input type="checkbox" [(ngModel)]="task.is_done" (change)="updateTask(task)" [disabled]="loading || disabled">
 <input type="text" [(ngModel)]="task.name" (change)="updateTask(task)" [disabled]="loading || disabled">
-<input [(colorPicker)]="task.color" [style.background]="task.color" (colorPickerChange)="updateTask(task)"  [disabled]="loading || disabled"/>
+<!-- <input [(colorPicker)]="task.color" [style.background]="task.color" (colorPickerChange)="updateTask(task)" [disabled]="loading || disabled"/> -->
+<input [(colorPicker)]="task.color" [style.background]="task.color" [value]="task.color" (cpToggleChange)="updateTask(task)"/> 
 <button class="btn btn-xs btn-danger" (click)="deleteTask(task)">Delete</button>
 <span class="small">{{task.created_at|age:now}} min</span>
 <img *ngIf="loading" src="assets/loader.gif">

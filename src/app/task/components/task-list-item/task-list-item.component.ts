@@ -8,7 +8,7 @@ import {
   Timekeeper
 } from '../../../shared/shared.barrel';
 
-import {ColorPickerService} from 'angular2-color-picker';
+import {ColorPickerService} from 'ngx-color-picker';
 
 @Component({
   selector: 'app-task-list-item',
@@ -24,6 +24,7 @@ export class TaskListItemComponent implements OnInit {
   @Output() public onDelete = new EventEmitter<Task>();
 
   public constructor(private _taskService: TaskService, private cpService: ColorPickerService) {
+ // public constructor(private _taskService: TaskService) {
     //
   }
 

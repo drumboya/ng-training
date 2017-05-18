@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { ColorPickerModule} from 'angular2-color-picker';
+import { ColorPickerModule} from 'ngx-color-picker';
 
 
 import {
